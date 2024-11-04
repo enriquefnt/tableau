@@ -1,0 +1,50 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.20.0-Odense">
+  <identifier>RADIOS_2010_v2023_1</identifier>
+  <parentidentifier></parentidentifier>
+  <language>SPA</language>
+  <type>dataset</type>
+  <title>RADIOS_2010_v2023_1</title>
+  <abstract>ueva versi?n actualizada de la bases cartogr?fica de los censos nacionales de Argentina, a?os 1991, 2001 y 2010. Incorpora mejoras sustanciales en georreferenciaci?n de los radios censales, correcci?n de c?digos para v?ncular con bases REDATAM, y nuevos pol?gonos para el Sector Ant?rtico e Islas del Atl?ntico Sur.</abstract>
+  <keywords vocabulary="Search keys">
+    <keyword>Radios censales de la Rep?blica Argentina</keyword>
+    <keyword>censo 2010 (Versi?n 2021)</keyword>
+  </keywords>
+  <contact>
+    <name></name>
+    <organization></organization>
+    <position></position>
+    <voice></voice>
+    <fax></fax>
+    <email></email>
+    <role></role>
+  </contact>
+  <links/>
+  <fees></fees>
+  <rights>Rodr?guez, Gonzalo Mart?n.&#xd;
+Invetigador Adjunto CEUR-CONICET&#xd;
+gonzalor@conicet.gov.ar</rights>
+  <encoding></encoding>
+  <crs>
+    <spatialrefsys>
+      <wkt></wkt>
+      <proj4></proj4>
+      <srsid>0</srsid>
+      <srid>0</srid>
+      <authid></authid>
+      <description></description>
+      <projectionacronym></projectionacronym>
+      <ellipsoidacronym></ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </crs>
+  <extent>
+    <spatial minx="-74" miny="-89.9999909999999943" crs="EPSG:4326" maxy="-21.78077800000000153" maxz="0" dimensions="2" minz="0" maxx="-26.25206999999999979"/>
+    <temporal>
+      <period>
+        <start></start>
+        <end></end>
+      </period>
+    </temporal>
+  </extent>
+</qgis>

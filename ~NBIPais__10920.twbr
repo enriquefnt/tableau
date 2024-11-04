@@ -1,0 +1,2187 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <RelationshipCalculations />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <SpatialFileLayer />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='dpto_pobla_pais.shp+ (Varias conexiones)' inline='true' name='federated.0060aq50yk5hai1gxw1v816tm58p' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dpto_pobla_pais' name='ogrdirect.0v1e8lr1cjrgnj12p3p6k19k20x7'>
+            <connection class='ogrdirect' directory='C:/TableauProy/Mapas' filename='dpto_pobla_pais.shp' password='' server='' tablename='' />
+          </named-connection>
+          <named-connection caption='NBIpais' name='textscan.12dw0r61afit9910pau8w1lbfiax'>
+            <connection class='textscan' directory='C:/TableauProy/Datos' filename='NBIpais.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='ogrdirect.0v1e8lr1cjrgnj12p3p6k19k20x7' name='dpto_pobla_pais.shp' table='[dpto_pobla_pais.shp]' type='table'>
+            <columns>
+              <column datatype='integer' name='GID' ordinal='0' />
+              <column datatype='string' name='OBJETO' ordinal='1' />
+              <column datatype='string' name='FNA' ordinal='2' />
+              <column datatype='string' name='GNA' ordinal='3' />
+              <column datatype='string' name='NAM' ordinal='4' />
+              <column datatype='string' name='IN1' ordinal='5' />
+              <column datatype='integer' name='Superficie' ordinal='6' />
+              <column datatype='real' name='Densidad' ordinal='7' />
+              <column datatype='integer' name='proyec_dpt' ordinal='8' />
+              <column datatype='integer' name='proyec_d_1' ordinal='9' />
+              <column datatype='integer' name='proyec_d_2' ordinal='10' />
+              <column datatype='string' name='proyec_d_3' ordinal='11' />
+              <column datatype='string' name='proyec_d_4' ordinal='12' />
+              <column datatype='integer' name='proyec_d_5' ordinal='13' />
+              <column datatype='integer' name='proyec_d_6' ordinal='14' />
+              <column datatype='integer' name='proyec_d_7' ordinal='15' />
+              <column datatype='spatial' name='Geometry' ordinal='16' />
+            </columns>
+          </relation>
+          <relation connection='textscan.12dw0r61afit9910pau8w1lbfiax' name='NBIpais.csv' table='[NBIpais#csv]' type='table'>
+            <columns character-set='windows-1252' header='yes' locale='es_ES' separator=';'>
+              <column datatype='integer' name='Codigo' ordinal='0' />
+              <column datatype='string' name='Departamento' ordinal='1' />
+              <column datatype='string' name='Hacinamiento' ordinal='2' />
+              <column datatype='string' name='VIvInconv' ordinal='3' />
+              <column datatype='string' name='SanitarioNo' ordinal='4' />
+              <column datatype='string' name='EscolaridadNO' ordinal='5' />
+              <column datatype='string' name='SUbsiNo' ordinal='6' />
+              <column datatype='string' name='NBISi' ordinal='7' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[NBIpais.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-5348_P100-1997&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GID]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>GID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBJETO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OBJETO]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>OBJETO</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FNA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FNA]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>FNA</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GNA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GNA]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>GNA</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAM]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>NAM</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IN1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IN1]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>IN1</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Superficie</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Superficie]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>Superficie</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Densidad</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Densidad]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>Densidad</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>proyec_dpt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[proyec_dpt]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>proyec_dpt</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>proyec_d_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[proyec_d_1]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>proyec_d_1</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>proyec_d_2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[proyec_d_2]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>proyec_d_2</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>proyec_d_3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[proyec_d_3]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>proyec_d_3</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>proyec_d_4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[proyec_d_4]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>proyec_d_4</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>proyec_d_5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[proyec_d_5]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>proyec_d_5</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>proyec_d_6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[proyec_d_6]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>proyec_d_6</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>proyec_d_7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[proyec_d_7]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>proyec_d_7</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[dpto_pobla_pais.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>16</ordinal>
+            <caption>Geometría</caption>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Codigo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Codigo]</local-name>
+            <parent-name>[NBIpais.csv]</parent-name>
+            <remote-alias>Codigo</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Departamento</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Departamento]</local-name>
+            <parent-name>[NBIpais.csv]</parent-name>
+            <remote-alias>Departamento</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hacinamiento</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hacinamiento]</local-name>
+            <parent-name>[NBIpais.csv]</parent-name>
+            <remote-alias>Hacinamiento</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VIvInconv</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VIvInconv]</local-name>
+            <parent-name>[NBIpais.csv]</parent-name>
+            <remote-alias>VIvInconv</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SanitarioNo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SanitarioNo]</local-name>
+            <parent-name>[NBIpais.csv]</parent-name>
+            <remote-alias>SanitarioNo</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EscolaridadNO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EscolaridadNO]</local-name>
+            <parent-name>[NBIpais.csv]</parent-name>
+            <remote-alias>EscolaridadNO</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUbsiNo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SUbsiNo]</local-name>
+            <parent-name>[NBIpais.csv]</parent-name>
+            <remote-alias>SUbsiNo</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NBISi</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NBISi]</local-name>
+            <parent-name>[NBIpais.csv]</parent-name>
+            <remote-alias>NBISi</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Codigo]' role='dimension' type='ordinal' />
+      <column caption='Escolaridad NO' datatype='real' datatype-customized='true' name='[EscolaridadNO]' role='measure' type='quantitative' />
+      <column caption='Geometría' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+      <column datatype='real' datatype-customized='true' name='[Hacinamiento]' role='measure' type='quantitative' />
+      <column caption='NBI Si' datatype='real' datatype-customized='true' name='[NBISi]' role='measure' type='quantitative' />
+      <column caption='Objeto' datatype='string' name='[OBJETO]' role='dimension' type='nominal' />
+      <column caption='S Ubsi No' datatype='real' datatype-customized='true' name='[SUbsiNo]' role='measure' type='quantitative' />
+      <column caption='Sanitario No' datatype='real' datatype-customized='true' name='[SanitarioNo]' role='measure' type='quantitative' />
+      <column caption='V Iv Inconv' datatype='real' datatype-customized='true' name='[VIvInconv]' role='measure' type='quantitative' />
+      <column caption='NBIpais.csv' datatype='table' name='[__tableau_internal_object_id__].[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]' role='measure' type='quantitative' />
+      <column caption='dpto_pobla_pais.shp' datatype='table' name='[__tableau_internal_object_id__].[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]' role='measure' type='quantitative' />
+      <column caption='Proyec D 1' datatype='integer' name='[proyec_d_1]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Proyec D 2' datatype='integer' name='[proyec_d_2]' role='dimension' type='ordinal' />
+      <column caption='Proyec D 3' datatype='string' name='[proyec_d_3]' role='dimension' type='nominal' />
+      <column caption='Proyec D 4' datatype='string' name='[proyec_d_4]' role='dimension' type='nominal' />
+      <column caption='Proyec D 5' datatype='integer' name='[proyec_d_5]' role='measure' type='quantitative' />
+      <column caption='Proyec D 6' datatype='integer' name='[proyec_d_6]' role='measure' type='quantitative' />
+      <column caption='Proyec D 7' datatype='integer' name='[proyec_d_7]' role='measure' type='quantitative' />
+      <column caption='Proyec Dpt' datatype='integer' name='[proyec_dpt]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/enriq/AppData/Local/Temp/TableauTemp/#TableauTemp_0bmvncc1adlykd125dioz1l31e1k.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/04/2024 05:01:57 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027' table='[Extract].[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]' type='table' />
+            <relation name='NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7' table='[Extract].[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]' type='table' />
+          </relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>GID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[GID]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>GID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>527</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OBJETO</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[OBJETO]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>OBJETO</remote-alias>
+              <ordinal>1</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FNA</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FNA]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>FNA</remote-alias>
+              <ordinal>2</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>471</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GNA</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GNA]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>GNA</remote-alias>
+              <ordinal>3</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NAM</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NAM]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>NAM</remote-alias>
+              <ordinal>4</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>450</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IN1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[IN1]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>IN1</remote-alias>
+              <ordinal>5</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>527</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Superficie</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Superficie]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>Superficie</remote-alias>
+              <ordinal>6</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>527</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Densidad</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Densidad]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>Densidad</remote-alias>
+              <ordinal>7</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>296</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>proyec_dpt</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[proyec_dpt]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>proyec_dpt</remote-alias>
+              <ordinal>8</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>proyec_d_1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[proyec_d_1]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>proyec_d_1</remote-alias>
+              <ordinal>9</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>155</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>proyec_d_2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[proyec_d_2]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>proyec_d_2</remote-alias>
+              <ordinal>10</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>526</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>proyec_d_3</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[proyec_d_3]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>proyec_d_3</remote-alias>
+              <ordinal>11</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>526</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>proyec_d_4</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[proyec_d_4]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>proyec_d_4</remote-alias>
+              <ordinal>12</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>444</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>proyec_d_5</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[proyec_d_5]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>proyec_d_5</remote-alias>
+              <ordinal>13</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>526</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>proyec_d_6</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[proyec_d_6]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>proyec_d_6</remote-alias>
+              <ordinal>14</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>526</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>proyec_d_7</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[proyec_d_7]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>proyec_d_7</remote-alias>
+              <ordinal>15</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>525</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Geometry</remote-name>
+              <remote-type>128</remote-type>
+              <local-name>[Geometry]</local-name>
+              <parent-name>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</parent-name>
+              <remote-alias>Geometry</remote-alias>
+              <ordinal>16</ordinal>
+              <family>dpto_pobla_pais.shp</family>
+              <local-type>spatial</local-type>
+              <aggregation>Collect</aggregation>
+              <approx-count>527</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Codigo</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Codigo]</local-name>
+              <parent-name>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</parent-name>
+              <remote-alias>Codigo</remote-alias>
+              <ordinal>17</ordinal>
+              <family>NBIpais.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>527</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Departamento</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Departamento]</local-name>
+              <parent-name>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</parent-name>
+              <remote-alias>Departamento</remote-alias>
+              <ordinal>18</ordinal>
+              <family>NBIpais.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>445</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hacinamiento</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Hacinamiento]</local-name>
+              <parent-name>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</parent-name>
+              <remote-alias>Hacinamiento</remote-alias>
+              <ordinal>19</ordinal>
+              <family>NBIpais.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>343</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>VIvInconv</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[VIvInconv]</local-name>
+              <parent-name>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</parent-name>
+              <remote-alias>VIvInconv</remote-alias>
+              <ordinal>20</ordinal>
+              <family>NBIpais.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>329</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SanitarioNo</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SanitarioNo]</local-name>
+              <parent-name>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</parent-name>
+              <remote-alias>SanitarioNo</remote-alias>
+              <ordinal>21</ordinal>
+              <family>NBIpais.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>265</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EscolaridadNO</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[EscolaridadNO]</local-name>
+              <parent-name>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</parent-name>
+              <remote-alias>EscolaridadNO</remote-alias>
+              <ordinal>22</ordinal>
+              <family>NBIpais.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>202</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SUbsiNo</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SUbsiNo]</local-name>
+              <parent-name>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</parent-name>
+              <remote-alias>SUbsiNo</remote-alias>
+              <ordinal>23</ordinal>
+              <family>NBIpais.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>180</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NBISi</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[NBISi]</local-name>
+              <parent-name>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</parent-name>
+              <remote-alias>NBISi</remote-alias>
+              <ordinal>24</ordinal>
+              <family>NBIpais.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>444</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Argentina&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='NBIpais.csv' id='NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7'>
+            <properties context=''>
+              <relation connection='textscan.12dw0r61afit9910pau8w1lbfiax' name='NBIpais.csv' table='[NBIpais#csv]' type='table'>
+                <columns character-set='windows-1252' header='yes' locale='es_ES' separator=';'>
+                  <column datatype='integer' name='Codigo' ordinal='0' />
+                  <column datatype='string' name='Departamento' ordinal='1' />
+                  <column datatype='string' name='Hacinamiento' ordinal='2' />
+                  <column datatype='string' name='VIvInconv' ordinal='3' />
+                  <column datatype='string' name='SanitarioNo' ordinal='4' />
+                  <column datatype='string' name='EscolaridadNO' ordinal='5' />
+                  <column datatype='string' name='SUbsiNo' ordinal='6' />
+                  <column datatype='string' name='NBISi' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7' table='[Extract].[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]' type='table' />
+            </properties>
+          </object>
+          <object caption='dpto_pobla_pais.shp' id='dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027'>
+            <properties context=''>
+              <relation connection='ogrdirect.0v1e8lr1cjrgnj12p3p6k19k20x7' name='dpto_pobla_pais.shp' table='[dpto_pobla_pais.shp]' type='table'>
+                <columns>
+                  <column datatype='integer' name='GID' ordinal='0' />
+                  <column datatype='string' name='OBJETO' ordinal='1' />
+                  <column datatype='string' name='FNA' ordinal='2' />
+                  <column datatype='string' name='GNA' ordinal='3' />
+                  <column datatype='string' name='NAM' ordinal='4' />
+                  <column datatype='string' name='IN1' ordinal='5' />
+                  <column datatype='integer' name='Superficie' ordinal='6' />
+                  <column datatype='real' name='Densidad' ordinal='7' />
+                  <column datatype='integer' name='proyec_dpt' ordinal='8' />
+                  <column datatype='integer' name='proyec_d_1' ordinal='9' />
+                  <column datatype='integer' name='proyec_d_2' ordinal='10' />
+                  <column datatype='string' name='proyec_d_3' ordinal='11' />
+                  <column datatype='string' name='proyec_d_4' ordinal='12' />
+                  <column datatype='integer' name='proyec_d_5' ordinal='13' />
+                  <column datatype='integer' name='proyec_d_6' ordinal='14' />
+                  <column datatype='integer' name='proyec_d_7' ordinal='15' />
+                  <column datatype='spatial' name='Geometry' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027' table='[Extract].[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[proyec_d_2]' />
+              <expression op='[Codigo]' />
+            </expression>
+            <first-end-point object-id='dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027' />
+            <second-end-point object-id='NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+    <datasource caption='Radios_salta.shp+ (Varias conexiones)' inline='true' name='federated.017j0my0pgplq11ad35xc081eqgo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Radios_salta' name='ogrdirect.0foiiva14nfpx9170wlnr1v2gkqe'>
+            <connection class='ogrdirect' directory='C:/TableauProy/Mapas' filename='Radios_salta.shp' password='' server='' tablename='' />
+          </named-connection>
+          <named-connection caption='NBISalta' name='textscan.0yljbvy0dirkq11fjkesi00n09fr'>
+            <connection class='textscan' directory='C:/TableauProy/Datos' filename='NBISalta.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='ogrdirect.0foiiva14nfpx9170wlnr1v2gkqe' name='Radios_salta.shp' table='[Radios_salta.shp]' type='table'>
+            <columns>
+              <column datatype='string' name='COD_2010' ordinal='0' />
+              <column datatype='string' name='PROV_' ordinal='1' />
+              <column datatype='string' name='DEPTO_' ordinal='2' />
+              <column datatype='string' name='FRACC_' ordinal='3' />
+              <column datatype='string' name='RADIO_' ordinal='4' />
+              <column datatype='string' name='CODAGLO_1' ordinal='5' />
+              <column datatype='string' name='CODAGLO_2' ordinal='6' />
+              <column datatype='string' name='CODAGLO_3' ordinal='7' />
+              <column datatype='string' name='CODAGLO_4' ordinal='8' />
+              <column datatype='string' name='CODAGLO_5' ordinal='9' />
+              <column datatype='real' name='HAS' ordinal='10' />
+              <column datatype='real' name='Shape_Area' ordinal='11' />
+              <column datatype='real' name='personaXho' ordinal='12' />
+              <column datatype='spatial' name='Geometry' ordinal='13' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0yljbvy0dirkq11fjkesi00n09fr' name='NBISalta.csv' table='[NBISalta#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='es_ES' separator=';'>
+              <column datatype='integer' name='Codigo' ordinal='0' />
+              <column datatype='string' name='Hacinamiento' ordinal='1' />
+              <column datatype='string' name='VIvInconv' ordinal='2' />
+              <column datatype='string' name='SanitarioNo' ordinal='3' />
+              <column datatype='string' name='EscolaridadNO' ordinal='4' />
+              <column datatype='string' name='SUbsiNo' ordinal='5' />
+              <column datatype='string' name='NBISi' ordinal='6' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[NBISalta.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COD_2010</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COD_2010]</local-name>
+            <parent-name>[Radios_salta.shp]</parent-name>
+            <remote-alias>COD_2010</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PROV_</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PROV_]</local-name>
+            <parent-name>[Radios_salta.shp]</parent-name>
+            <remote-alias>PROV_</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEPTO_</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DEPTO_]</local-name>
+            <parent-name>[Radios_salta.shp]</parent-name>
+            <remote-alias>DEPTO_</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FRACC_</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FRACC_]</local-name>
+            <parent-name>[Radios_salta.shp]</parent-name>
+            <remote-alias>FRACC_</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RADIO_</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RADIO_]</local-name>
+            <parent-name>[Radios_salta.shp]</parent-name>
+            <remote-alias>RADIO_</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CODAGLO_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CODAGLO_1]</local-name>
+            <parent-name>[Radios_salta.shp]</parent-name>
+            <remote-alias>CODAGLO_1</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CODAGLO_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CODAGLO_2]</local-name>
+            <parent-name>[Radios_salta.shp]</parent-name>
+            <remote-alias>CODAGLO_2</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CODAGLO_3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CODAGLO_3]</local-name>
+            <parent-name>[Radios_salta.shp]</parent-name>
+            <remote-alias>CODAGLO_3</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CODAGLO_4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CODAGLO_4]</local-name>
+            <parent-name>[Radios_salta.shp]</parent-name>
+            <remote-alias>CODAGLO_4</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CODAGLO_5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CODAGLO_5]</local-name>
+            <parent-name>[Radios_salta.shp]</parent-name>
+            <remote-alias>CODAGLO_5</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HAS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HAS]</local-name>
+            <parent-name>[Radios_salta.shp]</parent-name>
+            <remote-alias>HAS</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shape_Area</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shape_Area]</local-name>
+            <parent-name>[Radios_salta.shp]</parent-name>
+            <remote-alias>Shape_Area</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>personaXho</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[personaXho]</local-name>
+            <parent-name>[Radios_salta.shp]</parent-name>
+            <remote-alias>personaXho</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[Radios_salta.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>13</ordinal>
+            <caption>Geometría</caption>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Codigo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Codigo]</local-name>
+            <parent-name>[NBISalta.csv]</parent-name>
+            <remote-alias>Codigo</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hacinamiento</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hacinamiento]</local-name>
+            <parent-name>[NBISalta.csv]</parent-name>
+            <remote-alias>Hacinamiento</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VIvInconv</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VIvInconv]</local-name>
+            <parent-name>[NBISalta.csv]</parent-name>
+            <remote-alias>VIvInconv</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SanitarioNo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SanitarioNo]</local-name>
+            <parent-name>[NBISalta.csv]</parent-name>
+            <remote-alias>SanitarioNo</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EscolaridadNO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EscolaridadNO]</local-name>
+            <parent-name>[NBISalta.csv]</parent-name>
+            <remote-alias>EscolaridadNO</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUbsiNo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SUbsiNo]</local-name>
+            <parent-name>[NBISalta.csv]</parent-name>
+            <remote-alias>SUbsiNo</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NBISi</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NBISi]</local-name>
+            <parent-name>[NBISalta.csv]</parent-name>
+            <remote-alias>NBISi</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Codaglo 1' datatype='string' name='[CODAGLO_1]' role='dimension' type='nominal' />
+      <column caption='Codaglo 2' datatype='string' name='[CODAGLO_2]' role='dimension' type='nominal' />
+      <column caption='Codaglo 3' datatype='string' name='[CODAGLO_3]' role='dimension' type='nominal' />
+      <column caption='Codaglo 4' datatype='string' name='[CODAGLO_4]' role='dimension' type='nominal' />
+      <column caption='Codaglo 5' datatype='string' name='[CODAGLO_5]' role='dimension' type='nominal' />
+      <column caption='Cod 2010' datatype='string' name='[COD_2010]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Codigo]' role='dimension' type='ordinal' />
+      <column caption='Depto' datatype='string' name='[DEPTO_]' role='dimension' type='nominal' />
+      <column caption='Escolaridad NO' datatype='real' datatype-customized='true' name='[EscolaridadNO]' role='measure' type='quantitative' />
+      <column caption='Fracc' datatype='string' name='[FRACC_]' role='dimension' type='nominal' />
+      <column caption='Geometría' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+      <column datatype='real' datatype-customized='true' name='[Hacinamiento]' role='measure' type='quantitative' />
+      <column caption='NBI Si' datatype='real' datatype-customized='true' name='[NBISi]' role='measure' type='quantitative' />
+      <column caption='Prov' datatype='string' name='[PROV_]' role='dimension' type='nominal' />
+      <column caption='Radio' datatype='string' name='[RADIO_]' role='dimension' type='nominal' />
+      <column caption='S Ubsi No' datatype='real' datatype-customized='true' name='[SUbsiNo]' role='measure' type='quantitative' />
+      <column caption='Sanitario No' datatype='real' datatype-customized='true' name='[SanitarioNo]' role='measure' type='quantitative' />
+      <column caption='Shape Area' datatype='real' name='[Shape_Area]' role='measure' type='quantitative' />
+      <column caption='V Iv Inconv' datatype='real' datatype-customized='true' name='[VIvInconv]' role='measure' type='quantitative' />
+      <column caption='NBISalta.csv' datatype='table' name='[__tableau_internal_object_id__].[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]' role='measure' type='quantitative' />
+      <column caption='Radios_salta.shp' datatype='table' name='[__tableau_internal_object_id__].[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]' role='measure' type='quantitative' />
+      <column caption='Persona Xho' datatype='real' name='[personaXho]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/enriq/AppData/Local/Temp/TableauTemp/#TableauTemp_0xc2vyu1drjkck13jzluq0e013en.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/04/2024 05:04:36 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317' table='[Extract].[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]' type='table' />
+            <relation name='NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492' table='[Extract].[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]' type='table' />
+          </relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>COD_2010</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COD_2010]</local-name>
+              <parent-name>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</parent-name>
+              <remote-alias>COD_2010</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Radios_salta.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1358</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PROV_</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PROV_]</local-name>
+              <parent-name>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</parent-name>
+              <remote-alias>PROV_</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Radios_salta.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DEPTO_</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DEPTO_]</local-name>
+              <parent-name>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</parent-name>
+              <remote-alias>DEPTO_</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Radios_salta.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FRACC_</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FRACC_]</local-name>
+              <parent-name>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</parent-name>
+              <remote-alias>FRACC_</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Radios_salta.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RADIO_</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RADIO_]</local-name>
+              <parent-name>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</parent-name>
+              <remote-alias>RADIO_</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Radios_salta.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CODAGLO_1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CODAGLO_1]</local-name>
+              <parent-name>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</parent-name>
+              <remote-alias>CODAGLO_1</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Radios_salta.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>111</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CODAGLO_2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CODAGLO_2]</local-name>
+              <parent-name>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</parent-name>
+              <remote-alias>CODAGLO_2</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Radios_salta.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CODAGLO_3</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CODAGLO_3]</local-name>
+              <parent-name>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</parent-name>
+              <remote-alias>CODAGLO_3</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Radios_salta.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CODAGLO_4</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CODAGLO_4]</local-name>
+              <parent-name>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</parent-name>
+              <remote-alias>CODAGLO_4</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Radios_salta.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CODAGLO_5</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CODAGLO_5]</local-name>
+              <parent-name>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</parent-name>
+              <remote-alias>CODAGLO_5</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Radios_salta.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HAS</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[HAS]</local-name>
+              <parent-name>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</parent-name>
+              <remote-alias>HAS</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Radios_salta.shp</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1358</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Shape_Area</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Shape_Area]</local-name>
+              <parent-name>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</parent-name>
+              <remote-alias>Shape_Area</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Radios_salta.shp</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1358</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>personaXho</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[personaXho]</local-name>
+              <parent-name>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</parent-name>
+              <remote-alias>personaXho</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Radios_salta.shp</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Geometry</remote-name>
+              <remote-type>128</remote-type>
+              <local-name>[Geometry]</local-name>
+              <parent-name>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</parent-name>
+              <remote-alias>Geometry</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Radios_salta.shp</family>
+              <local-type>spatial</local-type>
+              <aggregation>Collect</aggregation>
+              <approx-count>1358</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Codigo</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Codigo]</local-name>
+              <parent-name>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</parent-name>
+              <remote-alias>Codigo</remote-alias>
+              <ordinal>14</ordinal>
+              <family>NBISalta.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1829</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hacinamiento</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Hacinamiento]</local-name>
+              <parent-name>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</parent-name>
+              <remote-alias>Hacinamiento</remote-alias>
+              <ordinal>15</ordinal>
+              <family>NBISalta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>716</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>VIvInconv</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[VIvInconv]</local-name>
+              <parent-name>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</parent-name>
+              <remote-alias>VIvInconv</remote-alias>
+              <ordinal>16</ordinal>
+              <family>NBISalta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>790</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SanitarioNo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SanitarioNo]</local-name>
+              <parent-name>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</parent-name>
+              <remote-alias>SanitarioNo</remote-alias>
+              <ordinal>17</ordinal>
+              <family>NBISalta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>520</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EscolaridadNO</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EscolaridadNO]</local-name>
+              <parent-name>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</parent-name>
+              <remote-alias>EscolaridadNO</remote-alias>
+              <ordinal>18</ordinal>
+              <family>NBISalta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>396</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SUbsiNo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SUbsiNo]</local-name>
+              <parent-name>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</parent-name>
+              <remote-alias>SUbsiNo</remote-alias>
+              <ordinal>19</ordinal>
+              <family>NBISalta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>318</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NBISi</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NBISi]</local-name>
+              <parent-name>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</parent-name>
+              <remote-alias>NBISi</remote-alias>
+              <ordinal>20</ordinal>
+              <family>NBISalta.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1023</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Argentina&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='NBISalta.csv' id='NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492'>
+            <properties context=''>
+              <relation connection='textscan.0yljbvy0dirkq11fjkesi00n09fr' name='NBISalta.csv' table='[NBISalta#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_ES' separator=';'>
+                  <column datatype='integer' name='Codigo' ordinal='0' />
+                  <column datatype='string' name='Hacinamiento' ordinal='1' />
+                  <column datatype='string' name='VIvInconv' ordinal='2' />
+                  <column datatype='string' name='SanitarioNo' ordinal='3' />
+                  <column datatype='string' name='EscolaridadNO' ordinal='4' />
+                  <column datatype='string' name='SUbsiNo' ordinal='5' />
+                  <column datatype='string' name='NBISi' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492' table='[Extract].[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]' type='table' />
+            </properties>
+          </object>
+          <object caption='Radios_salta.shp' id='Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317'>
+            <properties context=''>
+              <relation connection='ogrdirect.0foiiva14nfpx9170wlnr1v2gkqe' name='Radios_salta.shp' table='[Radios_salta.shp]' type='table'>
+                <columns>
+                  <column datatype='string' name='COD_2010' ordinal='0' />
+                  <column datatype='string' name='PROV_' ordinal='1' />
+                  <column datatype='string' name='DEPTO_' ordinal='2' />
+                  <column datatype='string' name='FRACC_' ordinal='3' />
+                  <column datatype='string' name='RADIO_' ordinal='4' />
+                  <column datatype='string' name='CODAGLO_1' ordinal='5' />
+                  <column datatype='string' name='CODAGLO_2' ordinal='6' />
+                  <column datatype='string' name='CODAGLO_3' ordinal='7' />
+                  <column datatype='string' name='CODAGLO_4' ordinal='8' />
+                  <column datatype='string' name='CODAGLO_5' ordinal='9' />
+                  <column datatype='real' name='HAS' ordinal='10' />
+                  <column datatype='real' name='Shape_Area' ordinal='11' />
+                  <column datatype='real' name='personaXho' ordinal='12' />
+                  <column datatype='spatial' name='Geometry' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317' table='[Extract].[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[COD_2010]' />
+              <expression op='STR([Codigo] )' />
+            </expression>
+            <first-end-point object-id='Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317' />
+            <second-end-point object-id='NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Radios_salta.shp+ (Varias conexiones)' name='federated.017j0my0pgplq11ad35xc081eqgo' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.017j0my0pgplq11ad35xc081eqgo'>
+            <column datatype='integer' name='[Codigo]' role='dimension' type='ordinal' />
+            <column caption='Geometría' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column caption='NBI Si' datatype='real' datatype-customized='true' name='[NBISi]' role='measure' type='quantitative' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Codigo]' derivation='None' name='[none:Codigo:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[NBISi]' derivation='Sum' name='[sum:NBISi:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.017j0my0pgplq11ad35xc081eqgo].[Longitude (generated)]' field-type='quantitative' max='-6710642.6257739756' min='-7940264.3633873397' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.017j0my0pgplq11ad35xc081eqgo].[Latitude (generated)]' field-type='quantitative' max='-2468686.0304693254' min='-3153680.813843579' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.017j0my0pgplq11ad35xc081eqgo].[sum:NBISi:qk]' num-steps='5' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='hillshade_highlight_bright' value='true' />
+            <format attr='enabled' id='hillshade_highlight_med' value='true' />
+            <format attr='enabled' id='hillshade_shadow_faint' value='true' />
+            <format attr='enabled' id='hillshade_shadow_med' value='true' />
+            <format attr='enabled' id='hillshade_shadow_dark' value='true' />
+            <format attr='enabled' id='hillshade_shadow_extreme' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries-bg' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries-dispute' value='true' />
+            <format attr='enabled' id='admin-2-boundaries-bg' value='true' />
+            <format attr='enabled' id='admin-2-boundaries' value='true' />
+            <format attr='enabled' id='place-village' value='true' />
+            <format attr='enabled' id='place-town' value='true' />
+            <format attr='enabled' id='place-islands' value='true' />
+            <format attr='enabled' id='place-city-sm' value='true' />
+            <format attr='enabled' id='place-city-md-s' value='true' />
+            <format attr='enabled' id='place-city-md-n' value='true' />
+            <format attr='enabled' id='place-city-lg-s' value='true' />
+            <format attr='enabled' id='place-city-lg-n' value='true' />
+            <format attr='enabled' id='place-capital-s' value='true' />
+            <format attr='enabled' id='place-capital-n' value='true' />
+            <format attr='enabled' id='tunnel-service-link-track-case' value='true' />
+            <format attr='enabled' id='tunnel-street_limited-case' value='true' />
+            <format attr='enabled' id='tunnel-street-case' value='true' />
+            <format attr='enabled' id='tunnel-secondary-tertiary-case' value='true' />
+            <format attr='enabled' id='tunnel-primary-case' value='true' />
+            <format attr='enabled' id='tunnel-trunk_link-case' value='true' />
+            <format attr='enabled' id='tunnel-motorway_link-case' value='true' />
+            <format attr='enabled' id='tunnel-trunk-case' value='true' />
+            <format attr='enabled' id='tunnel-motorway-case' value='true' />
+            <format attr='enabled' id='tunnel-trunk_link' value='true' />
+            <format attr='enabled' id='tunnel-motorway_link' value='true' />
+            <format attr='enabled' id='tunnel-service-link-track' value='true' />
+            <format attr='enabled' id='tunnel-street_limited' value='true' />
+            <format attr='enabled' id='tunnel-street' value='true' />
+            <format attr='enabled' id='tunnel-tertiary' value='true' />
+            <format attr='enabled' id='tunnel-secondary' value='true' />
+            <format attr='enabled' id='tunnel-primary' value='true' />
+            <format attr='enabled' id='tunnel-trunk' value='true' />
+            <format attr='enabled' id='tunnel-motorway' value='true' />
+            <format attr='enabled' id='road-street-low' value='true' />
+            <format attr='enabled' id='road-street_limited-low' value='true' />
+            <format attr='enabled' id='road-pedestrian-case' value='true' />
+            <format attr='enabled' id='road-service-link-track-case' value='true' />
+            <format attr='enabled' id='road-street_limited-case' value='true' />
+            <format attr='enabled' id='road-street-case' value='true' />
+            <format attr='enabled' id='road-tertiary-case' value='true' />
+            <format attr='enabled' id='road-secondary-case' value='true' />
+            <format attr='enabled' id='road-primary-case' value='true' />
+            <format attr='enabled' id='road-motorway_link-case' value='true' />
+            <format attr='enabled' id='road-trunk_link-case' value='true' />
+            <format attr='enabled' id='road-trunk-case' value='true' />
+            <format attr='enabled' id='road-motorway-case' value='true' />
+            <format attr='enabled' id='road-trunk_link' value='true' />
+            <format attr='enabled' id='road-motorway_link' value='true' />
+            <format attr='enabled' id='road-path' value='true' />
+            <format attr='enabled' id='road-pedestrian' value='true' />
+            <format attr='enabled' id='road-polygon' value='true' />
+            <format attr='enabled' id='road-service-link-track' value='true' />
+            <format attr='enabled' id='road-street_limited' value='true' />
+            <format attr='enabled' id='road-street' value='true' />
+            <format attr='enabled' id='road-tertiary' value='true' />
+            <format attr='enabled' id='road-secondary' value='true' />
+            <format attr='enabled' id='road-primary' value='true' />
+            <format attr='enabled' id='road-trunk' value='true' />
+            <format attr='enabled' id='road-motorway' value='true' />
+            <format attr='enabled' id='road-rail' value='true' />
+            <format attr='enabled' id='road-rail-tracks' value='true' />
+            <format attr='enabled' id='bridge-street-low' value='true' />
+            <format attr='enabled' id='bridge-street_limited-low' value='true' />
+            <format attr='enabled' id='bridge-pedestrian-case' value='true' />
+            <format attr='enabled' id='bridge-service-link-track-case' value='true' />
+            <format attr='enabled' id='bridge-street_limited-case' value='true' />
+            <format attr='enabled' id='bridge-street-case' value='true' />
+            <format attr='enabled' id='bridge-tertiary-case' value='true' />
+            <format attr='enabled' id='bridge-secondary-case' value='true' />
+            <format attr='enabled' id='bridge-primary-case' value='true' />
+            <format attr='enabled' id='bridge-trunk_link-case' value='true' />
+            <format attr='enabled' id='bridge-motorway_link-case' value='true' />
+            <format attr='enabled' id='bridge-trunk-case' value='true' />
+            <format attr='enabled' id='bridge-motorway-case' value='true' />
+            <format attr='enabled' id='bridge-trunk_link' value='true' />
+            <format attr='enabled' id='bridge-motorway_link' value='true' />
+            <format attr='enabled' id='bridge-path' value='true' />
+            <format attr='enabled' id='bridge-pedestrian' value='true' />
+            <format attr='enabled' id='bridge-service-link-track' value='true' />
+            <format attr='enabled' id='bridge-street_limited' value='true' />
+            <format attr='enabled' id='bridge-street' value='true' />
+            <format attr='enabled' id='bridge-tertiary' value='true' />
+            <format attr='enabled' id='bridge-secondary' value='true' />
+            <format attr='enabled' id='bridge-primary' value='true' />
+            <format attr='enabled' id='bridge-trunk' value='true' />
+            <format attr='enabled' id='bridge-motorway' value='true' />
+            <format attr='enabled' id='bridge-rail' value='true' />
+            <format attr='enabled' id='bridge-rail-tracks' value='true' />
+            <format attr='enabled' id='bridge-trunk_link-2-case' value='true' />
+            <format attr='enabled' id='bridge-motorway_link-2-case' value='true' />
+            <format attr='enabled' id='bridge-trunk-2-case' value='true' />
+            <format attr='enabled' id='bridge-motorway-2-case' value='true' />
+            <format attr='enabled' id='bridge-trunk_link-2' value='true' />
+            <format attr='enabled' id='bridge-motorway_link-2' value='true' />
+            <format attr='enabled' id='bridge-trunk-2' value='true' />
+            <format attr='enabled' id='bridge-motorway-2' value='true' />
+            <format attr='enabled' id='road-shields-2-white' value='true' />
+            <format attr='enabled' id='road-shields-2-black' value='true' />
+            <format attr='enabled' id='road-shields-1-white' value='true' />
+            <format attr='enabled' id='road-shields-1-black' value='true' />
+            <format attr='enabled' id='road-label-small' value='true' />
+            <format attr='enabled' id='road-label-big' value='true' />
+            <format attr='enabled' id='Coastline' value='true' />
+            <format attr='enabled' id='Area Code Boundaries' value='true' />
+            <format attr='enabled' id='US Metro Boundaries CBSA' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.017j0my0pgplq11ad35xc081eqgo].[sum:NBISi:qk]' />
+              <lod column='[federated.017j0my0pgplq11ad35xc081eqgo].[clct:Geometry:nk]' />
+              <lod column='[federated.017j0my0pgplq11ad35xc081eqgo].[none:Codigo:ok]' />
+              <geometry column='[federated.017j0my0pgplq11ad35xc081eqgo].[clct:Geometry:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.017j0my0pgplq11ad35xc081eqgo].[Latitude (generated)]</rows>
+        <cols>[federated.017j0my0pgplq11ad35xc081eqgo].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{4A67033A-CC67-450F-AE4C-890CE3579A0F}' />
+    </worksheet>
+    <worksheet name='Hoja 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dpto_pobla_pais.shp+ (Varias conexiones)' name='federated.0060aq50yk5hai1gxw1v816tm58p' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0060aq50yk5hai1gxw1v816tm58p'>
+            <column datatype='string' name='[Departamento]' role='dimension' type='nominal' />
+            <column caption='Geometría' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column caption='NBI Si' datatype='real' datatype-customized='true' name='[NBISi]' role='measure' type='quantitative' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Departamento]' derivation='None' name='[none:Departamento:nk]' pivot='key' type='nominal' />
+            <column-instance column='[proyec_d_2]' derivation='None' name='[none:proyec_d_2:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Proyec D 2' datatype='integer' name='[proyec_d_2]' role='dimension' type='ordinal' />
+            <column-instance column='[NBISi]' derivation='Sum' name='[sum:NBISi:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0060aq50yk5hai1gxw1v816tm58p].[Longitude (generated)]' field-type='quantitative' max='-6618221.4776021969' min='-7679302.9955424014' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0060aq50yk5hai1gxw1v816tm58p].[Latitude (generated)]' field-type='quantitative' max='-2477606.0696823662' min='-3068710.8641817016' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:NBISi:qk]' num-steps='5' palette='orange_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='hillshade_highlight_bright' value='true' />
+            <format attr='enabled' id='hillshade_highlight_med' value='true' />
+            <format attr='enabled' id='hillshade_shadow_faint' value='true' />
+            <format attr='enabled' id='hillshade_shadow_med' value='true' />
+            <format attr='enabled' id='hillshade_shadow_dark' value='true' />
+            <format attr='enabled' id='hillshade_shadow_extreme' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries-bg' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries' value='true' />
+            <format attr='enabled' id='light-admin-0-boundaries-dispute' value='true' />
+            <format attr='enabled' id='admin-2-boundaries-bg' value='true' />
+            <format attr='enabled' id='admin-2-boundaries' value='true' />
+            <format attr='enabled' id='place-village' value='true' />
+            <format attr='enabled' id='place-town' value='true' />
+            <format attr='enabled' id='place-islands' value='true' />
+            <format attr='enabled' id='place-city-sm' value='true' />
+            <format attr='enabled' id='place-city-md-s' value='true' />
+            <format attr='enabled' id='place-city-md-n' value='true' />
+            <format attr='enabled' id='place-city-lg-s' value='true' />
+            <format attr='enabled' id='place-city-lg-n' value='true' />
+            <format attr='enabled' id='place-capital-s' value='true' />
+            <format attr='enabled' id='place-capital-n' value='true' />
+            <format attr='enabled' id='tunnel-service-link-track-case' value='true' />
+            <format attr='enabled' id='tunnel-street_limited-case' value='true' />
+            <format attr='enabled' id='tunnel-street-case' value='true' />
+            <format attr='enabled' id='tunnel-secondary-tertiary-case' value='true' />
+            <format attr='enabled' id='tunnel-primary-case' value='true' />
+            <format attr='enabled' id='tunnel-trunk_link-case' value='true' />
+            <format attr='enabled' id='tunnel-motorway_link-case' value='true' />
+            <format attr='enabled' id='tunnel-trunk-case' value='true' />
+            <format attr='enabled' id='tunnel-motorway-case' value='true' />
+            <format attr='enabled' id='tunnel-trunk_link' value='true' />
+            <format attr='enabled' id='tunnel-motorway_link' value='true' />
+            <format attr='enabled' id='tunnel-service-link-track' value='true' />
+            <format attr='enabled' id='tunnel-street_limited' value='true' />
+            <format attr='enabled' id='tunnel-street' value='true' />
+            <format attr='enabled' id='tunnel-tertiary' value='true' />
+            <format attr='enabled' id='tunnel-secondary' value='true' />
+            <format attr='enabled' id='tunnel-primary' value='true' />
+            <format attr='enabled' id='tunnel-trunk' value='true' />
+            <format attr='enabled' id='tunnel-motorway' value='true' />
+            <format attr='enabled' id='road-street-low' value='true' />
+            <format attr='enabled' id='road-street_limited-low' value='true' />
+            <format attr='enabled' id='road-pedestrian-case' value='true' />
+            <format attr='enabled' id='road-service-link-track-case' value='true' />
+            <format attr='enabled' id='road-street_limited-case' value='true' />
+            <format attr='enabled' id='road-street-case' value='true' />
+            <format attr='enabled' id='road-tertiary-case' value='true' />
+            <format attr='enabled' id='road-secondary-case' value='true' />
+            <format attr='enabled' id='road-primary-case' value='true' />
+            <format attr='enabled' id='road-motorway_link-case' value='true' />
+            <format attr='enabled' id='road-trunk_link-case' value='true' />
+            <format attr='enabled' id='road-trunk-case' value='true' />
+            <format attr='enabled' id='road-motorway-case' value='true' />
+            <format attr='enabled' id='road-trunk_link' value='true' />
+            <format attr='enabled' id='road-motorway_link' value='true' />
+            <format attr='enabled' id='road-path' value='true' />
+            <format attr='enabled' id='road-pedestrian' value='true' />
+            <format attr='enabled' id='road-polygon' value='true' />
+            <format attr='enabled' id='road-service-link-track' value='true' />
+            <format attr='enabled' id='road-street_limited' value='true' />
+            <format attr='enabled' id='road-street' value='true' />
+            <format attr='enabled' id='road-tertiary' value='true' />
+            <format attr='enabled' id='road-secondary' value='true' />
+            <format attr='enabled' id='road-primary' value='true' />
+            <format attr='enabled' id='road-trunk' value='true' />
+            <format attr='enabled' id='road-motorway' value='true' />
+            <format attr='enabled' id='road-rail' value='true' />
+            <format attr='enabled' id='road-rail-tracks' value='true' />
+            <format attr='enabled' id='bridge-street-low' value='true' />
+            <format attr='enabled' id='bridge-street_limited-low' value='true' />
+            <format attr='enabled' id='bridge-pedestrian-case' value='true' />
+            <format attr='enabled' id='bridge-service-link-track-case' value='true' />
+            <format attr='enabled' id='bridge-street_limited-case' value='true' />
+            <format attr='enabled' id='bridge-street-case' value='true' />
+            <format attr='enabled' id='bridge-tertiary-case' value='true' />
+            <format attr='enabled' id='bridge-secondary-case' value='true' />
+            <format attr='enabled' id='bridge-primary-case' value='true' />
+            <format attr='enabled' id='bridge-trunk_link-case' value='true' />
+            <format attr='enabled' id='bridge-motorway_link-case' value='true' />
+            <format attr='enabled' id='bridge-trunk-case' value='true' />
+            <format attr='enabled' id='bridge-motorway-case' value='true' />
+            <format attr='enabled' id='bridge-trunk_link' value='true' />
+            <format attr='enabled' id='bridge-motorway_link' value='true' />
+            <format attr='enabled' id='bridge-path' value='true' />
+            <format attr='enabled' id='bridge-pedestrian' value='true' />
+            <format attr='enabled' id='bridge-service-link-track' value='true' />
+            <format attr='enabled' id='bridge-street_limited' value='true' />
+            <format attr='enabled' id='bridge-street' value='true' />
+            <format attr='enabled' id='bridge-tertiary' value='true' />
+            <format attr='enabled' id='bridge-secondary' value='true' />
+            <format attr='enabled' id='bridge-primary' value='true' />
+            <format attr='enabled' id='bridge-trunk' value='true' />
+            <format attr='enabled' id='bridge-motorway' value='true' />
+            <format attr='enabled' id='bridge-rail' value='true' />
+            <format attr='enabled' id='bridge-rail-tracks' value='true' />
+            <format attr='enabled' id='bridge-trunk_link-2-case' value='true' />
+            <format attr='enabled' id='bridge-motorway_link-2-case' value='true' />
+            <format attr='enabled' id='bridge-trunk-2-case' value='true' />
+            <format attr='enabled' id='bridge-motorway-2-case' value='true' />
+            <format attr='enabled' id='bridge-trunk_link-2' value='true' />
+            <format attr='enabled' id='bridge-motorway_link-2' value='true' />
+            <format attr='enabled' id='bridge-trunk-2' value='true' />
+            <format attr='enabled' id='bridge-motorway-2' value='true' />
+            <format attr='enabled' id='road-shields-2-white' value='true' />
+            <format attr='enabled' id='road-shields-2-black' value='true' />
+            <format attr='enabled' id='road-shields-1-white' value='true' />
+            <format attr='enabled' id='road-shields-1-black' value='true' />
+            <format attr='enabled' id='road-label-small' value='true' />
+            <format attr='enabled' id='road-label-big' value='true' />
+            <format attr='enabled' id='Coastline' value='true' />
+            <format attr='enabled' id='Area Code Boundaries' value='true' />
+            <format attr='enabled' id='US Metro Boundaries CBSA' value='true' />
+            <format attr='enabled' id='place-islands-2' value='true' />
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='normal' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:NBISi:qk]' />
+              <text column='[federated.0060aq50yk5hai1gxw1v816tm58p].[none:Departamento:nk]' />
+              <lod column='[federated.0060aq50yk5hai1gxw1v816tm58p].[clct:Geometry:nk]' />
+              <lod column='[federated.0060aq50yk5hai1gxw1v816tm58p].[none:proyec_d_2:ok]' />
+              <geometry column='[federated.0060aq50yk5hai1gxw1v816tm58p].[clct:Geometry:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-transparency' value='185' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0060aq50yk5hai1gxw1v816tm58p].[Latitude (generated)]</rows>
+        <cols>[federated.0060aq50yk5hai1gxw1v816tm58p].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{7DC5F181-31FC-4A36-9CC6-4EC8E086661A}' />
+    </worksheet>
+    <worksheet name='Hoja 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dpto_pobla_pais.shp+ (Varias conexiones)' name='federated.0060aq50yk5hai1gxw1v816tm58p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0060aq50yk5hai1gxw1v816tm58p'>
+            <column datatype='string' name='[Departamento]' role='dimension' type='nominal' />
+            <column caption='Escolaridad NO' datatype='real' datatype-customized='true' name='[EscolaridadNO]' role='measure' type='quantitative' />
+            <column datatype='real' datatype-customized='true' name='[Hacinamiento]' role='measure' type='quantitative' />
+            <column caption='NBI Si' datatype='real' datatype-customized='true' name='[NBISi]' role='measure' type='quantitative' />
+            <column caption='S Ubsi No' datatype='real' datatype-customized='true' name='[SUbsiNo]' role='measure' type='quantitative' />
+            <column caption='Sanitario No' datatype='real' datatype-customized='true' name='[SanitarioNo]' role='measure' type='quantitative' />
+            <column caption='V Iv Inconv' datatype='real' datatype-customized='true' name='[VIvInconv]' role='measure' type='quantitative' />
+            <column-instance column='[Departamento]' derivation='None' name='[none:Departamento:nk]' pivot='key' type='nominal' />
+            <column-instance column='[proyec_d_2]' derivation='None' name='[none:proyec_d_2:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Proyec D 2' datatype='integer' name='[proyec_d_2]' role='dimension' type='ordinal' />
+            <column-instance column='[EscolaridadNO]' derivation='Sum' name='[sum:EscolaridadNO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Hacinamiento]' derivation='Sum' name='[sum:Hacinamiento:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NBISi]' derivation='Sum' name='[sum:NBISi:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SUbsiNo]' derivation='Sum' name='[sum:SUbsiNo:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SanitarioNo]' derivation='Sum' name='[sum:SanitarioNo:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[VIvInconv]' derivation='Sum' name='[sum:VIvInconv:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0060aq50yk5hai1gxw1v816tm58p].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:EscolaridadNO:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:Hacinamiento:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:SUbsiNo:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:VIvInconv:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:SanitarioNo:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:NBISi:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0060aq50yk5hai1gxw1v816tm58p].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:EscolaridadNO:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:Hacinamiento:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:SUbsiNo:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:VIvInconv:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:SanitarioNo:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:NBISi:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0060aq50yk5hai1gxw1v816tm58p].[none:proyec_d_2:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:proyec_d_2:ok]' />
+              <groupfilter function='member' level='[none:proyec_d_2:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0060aq50yk5hai1gxw1v816tm58p].[none:Departamento:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:SanitarioNo:qk]' shelf='rows' />
+            <shelf-sort-v2 dimension-to-sort='[federated.0060aq50yk5hai1gxw1v816tm58p].[none:proyec_d_2:ok]' direction='DESC' measure-to-sort-by='[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:NBISi:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0060aq50yk5hai1gxw1v816tm58p].[:Measure Names]</column>
+            <column>[federated.0060aq50yk5hai1gxw1v816tm58p].[none:proyec_d_2:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0060aq50yk5hai1gxw1v816tm58p].[:Measure Names]' value='131' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0060aq50yk5hai1gxw1v816tm58p].[:Measure Names]' value='68' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0060aq50yk5hai1gxw1v816tm58p].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0060aq50yk5hai1gxw1v816tm58p].[none:proyec_d_2:ok] / [federated.0060aq50yk5hai1gxw1v816tm58p].[none:Departamento:nk])</rows>
+        <cols>[federated.0060aq50yk5hai1gxw1v816tm58p].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{34601B2C-0C63-480C-814E-1AE65626AEB9}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.017j0my0pgplq11ad35xc081eqgo].[sum:NBISi:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4C52277D-7ED4-4D02-9009-EDE73AFBA1D5}' />
+    </window>
+    <window class='worksheet' name='Hoja 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:NBISi:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+        <map-scale-visibility value='0' />
+        <default-map-tool-selection tool='1' />
+        <default-map-unit-selection mapunit='1' />
+      </viewpoint>
+      <simple-id uuid='{BC3A32C3-7104-4767-92F1-93C612853E53}' />
+    </window>
+    <window class='worksheet' name='Hoja 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D078F6CC-8496-4E7B-812D-FD6051F9DF48}' />
+    </window>
+  </windows>
+</workbook>
