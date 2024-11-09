@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20243.24.1010.1014                               -->
-<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <AnimationOnByDefault />
     <IntuitiveSorting />
@@ -19,6 +19,7 @@
     <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
     <WindowsPersistSimpleIdentifiers />
   </document-format-change-manifest>
+  <repository-location id='NBIPais' path='/workbooks' revision='1.1' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -28,10 +29,10 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='dpto_pobla_pais' name='ogrdirect.0v1e8lr1cjrgnj12p3p6k19k20x7'>
-            <connection class='ogrdirect' directory='C:/TableauProy/Mapas' filename='dpto_pobla_pais.shp' password='' server='' tablename='' />
+            <connection class='ogrdirect' directory='C:/TableauProy/Mapas' filename='dpto_pobla_pais.shp' password='' server='' tablename='' workgroup-auth-mode='as-is' />
           </named-connection>
           <named-connection caption='NBIpais' name='textscan.12dw0r61afit9910pau8w1lbfiax'>
-            <connection class='textscan' directory='C:/TableauProy/Datos' filename='NBIpais.csv' password='' server='' />
+            <connection class='textscan' directory='C:/TableauProy/Datos' filename='NBIpais.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation type='collection'>
@@ -441,7 +442,7 @@
       <column caption='Proyec D 7' datatype='integer' name='[proyec_d_7]' role='measure' type='quantitative' />
       <column caption='Proyec Dpt' datatype='integer' name='[proyec_dpt]' role='measure' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/enriq/AppData/Local/Temp/TableauTemp/#TableauTemp_0bmvncc1adlykd125dioz1l31e1k.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/04/2024 05:01:57 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/enriq/AppData/Local/Temp/TableauTemp/#TableauTemp_0bmvncc1adlykd125dioz1l31e1k.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation type='collection'>
             <relation name='dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027' table='[Extract].[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]' type='table' />
             <relation name='NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7' table='[Extract].[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]' type='table' />
@@ -459,7 +460,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>527</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>OBJETO</remote-name>
@@ -474,7 +474,6 @@
               <approx-count>1</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>FNA</remote-name>
@@ -489,7 +488,6 @@
               <approx-count>471</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>GNA</remote-name>
@@ -504,7 +502,6 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>NAM</remote-name>
@@ -519,7 +516,6 @@
               <approx-count>450</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>IN1</remote-name>
@@ -534,7 +530,6 @@
               <approx-count>527</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Superficie</remote-name>
@@ -548,7 +543,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>527</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Densidad</remote-name>
@@ -562,7 +556,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>296</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>proyec_dpt</remote-name>
@@ -576,7 +569,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>25</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>proyec_d_1</remote-name>
@@ -590,7 +582,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>155</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>proyec_d_2</remote-name>
@@ -604,7 +595,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>526</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>proyec_d_3</remote-name>
@@ -619,7 +609,6 @@
               <approx-count>526</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>proyec_d_4</remote-name>
@@ -634,7 +623,6 @@
               <approx-count>444</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>proyec_d_5</remote-name>
@@ -648,7 +636,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>526</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>proyec_d_6</remote-name>
@@ -662,7 +649,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>526</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>proyec_d_7</remote-name>
@@ -676,7 +662,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>525</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Geometry</remote-name>
@@ -690,7 +675,6 @@
               <aggregation>Collect</aggregation>
               <approx-count>527</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[dpto_pobla_pais.shp_A9084796AAA14B9D98B0082EE1F97027]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Codigo</remote-name>
@@ -704,7 +688,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>527</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Departamento</remote-name>
@@ -719,7 +702,6 @@
               <approx-count>445</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LES_RES' />
-              <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Hacinamiento</remote-name>
@@ -733,7 +715,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>343</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>VIvInconv</remote-name>
@@ -747,7 +728,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>329</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>SanitarioNo</remote-name>
@@ -761,7 +741,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>265</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>EscolaridadNO</remote-name>
@@ -775,7 +754,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>202</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>SUbsiNo</remote-name>
@@ -789,7 +767,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>180</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>NBISi</remote-name>
@@ -803,7 +780,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>444</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[NBIpais.csv_88BB0B11D1504D47986FD5E5164B11A7]</object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -879,10 +855,10 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='Radios_salta' name='ogrdirect.0foiiva14nfpx9170wlnr1v2gkqe'>
-            <connection class='ogrdirect' directory='C:/TableauProy/Mapas' filename='Radios_salta.shp' password='' server='' tablename='' />
+            <connection class='ogrdirect' directory='C:/TableauProy/Mapas' filename='Radios_salta.shp' password='' server='' tablename='' workgroup-auth-mode='as-is' />
           </named-connection>
           <named-connection caption='NBISalta' name='textscan.0yljbvy0dirkq11fjkesi00n09fr'>
-            <connection class='textscan' directory='C:/TableauProy/Datos' filename='NBISalta.csv' password='' server='' />
+            <connection class='textscan' directory='C:/TableauProy/Datos' filename='NBISalta.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation type='collection'>
@@ -1243,7 +1219,7 @@
       <column caption='Radios_salta.shp' datatype='table' name='[__tableau_internal_object_id__].[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]' role='measure' type='quantitative' />
       <column caption='Persona Xho' datatype='real' name='[personaXho]' role='measure' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/enriq/AppData/Local/Temp/TableauTemp/#TableauTemp_0xc2vyu1drjkck13jzluq0e013en.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/04/2024 05:04:36 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/enriq/AppData/Local/Temp/TableauTemp/#TableauTemp_0xc2vyu1drjkck13jzluq0e013en.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation type='collection'>
             <relation name='Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317' table='[Extract].[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]' type='table' />
             <relation name='NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492' table='[Extract].[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]' type='table' />
@@ -1262,7 +1238,6 @@
               <approx-count>1358</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>PROV_</remote-name>
@@ -1277,7 +1252,6 @@
               <approx-count>1</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>DEPTO_</remote-name>
@@ -1292,7 +1266,6 @@
               <approx-count>23</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>FRACC_</remote-name>
@@ -1307,7 +1280,6 @@
               <approx-count>28</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>RADIO_</remote-name>
@@ -1322,7 +1294,6 @@
               <approx-count>27</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>CODAGLO_1</remote-name>
@@ -1337,7 +1308,6 @@
               <approx-count>111</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>CODAGLO_2</remote-name>
@@ -1352,7 +1322,6 @@
               <approx-count>7</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>CODAGLO_3</remote-name>
@@ -1367,7 +1336,6 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>CODAGLO_4</remote-name>
@@ -1382,7 +1350,6 @@
               <approx-count>1</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>CODAGLO_5</remote-name>
@@ -1397,7 +1364,6 @@
               <approx-count>1</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
-              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>HAS</remote-name>
@@ -1411,7 +1377,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1358</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Shape_Area</remote-name>
@@ -1425,7 +1390,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1358</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>personaXho</remote-name>
@@ -1439,7 +1403,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>39</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Geometry</remote-name>
@@ -1453,7 +1416,6 @@
               <aggregation>Collect</aggregation>
               <approx-count>1358</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[Radios_salta.shp_56E107C1BAF14B919A1613BEBF34D317]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Codigo</remote-name>
@@ -1467,7 +1429,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1829</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Hacinamiento</remote-name>
@@ -1482,7 +1443,6 @@
               <approx-count>716</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LES_RES' />
-              <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>VIvInconv</remote-name>
@@ -1497,7 +1457,6 @@
               <approx-count>790</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LES_RES' />
-              <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>SanitarioNo</remote-name>
@@ -1512,7 +1471,6 @@
               <approx-count>520</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LES_RES' />
-              <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>EscolaridadNO</remote-name>
@@ -1527,7 +1485,6 @@
               <approx-count>396</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LES_RES' />
-              <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>SUbsiNo</remote-name>
@@ -1542,7 +1499,6 @@
               <approx-count>318</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LES_RES' />
-              <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>NBISi</remote-name>
@@ -1557,7 +1513,6 @@
               <approx-count>1023</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LES_RES' />
-              <object-id>[NBISalta.csv_A8EEDC4318754C91948AD4000D2B0492]</object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -1651,8 +1606,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.017j0my0pgplq11ad35xc081eqgo].[Longitude (generated)]' field-type='quantitative' max='-6710642.6257739756' min='-7940264.3633873397' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.017j0my0pgplq11ad35xc081eqgo].[Latitude (generated)]' field-type='quantitative' max='-2468686.0304693254' min='-3153680.813843579' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.017j0my0pgplq11ad35xc081eqgo].[Longitude (generated)]' field-type='quantitative' max='-6868161.7089672312' min='-8079181.770848793' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.017j0my0pgplq11ad35xc081eqgo].[Latitude (generated)]' field-type='quantitative' max='-2469628.2563394397' min='-3144260.4619806134' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.017j0my0pgplq11ad35xc081eqgo].[sum:NBISi:qk]' num-steps='5' palette='red_10_0' type='interpolated' />
@@ -1795,6 +1750,15 @@
       <simple-id uuid='{4A67033A-CC67-450F-AE4C-890CE3579A0F}' />
     </worksheet>
     <worksheet name='Hoja 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Unsatisfied Basic Needs - Argentine Republic - Census Year 2022</run>
+            <run>Æ&#10;</run>
+            <run fontsize='11'>Necesidades Básicas Insatisfechas - República Argentina - Censo Año 2022</run>
+          </formatted-text>
+        </title>
+      </layout-options>
       <table>
         <view>
           <datasources>
@@ -1804,11 +1768,9 @@
             <mapsource name='Tableau' />
           </mapsources>
           <datasource-dependencies datasource='federated.0060aq50yk5hai1gxw1v816tm58p'>
-            <column datatype='string' name='[Departamento]' role='dimension' type='nominal' />
             <column caption='Geometría' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
             <column caption='NBI Si' datatype='real' datatype-customized='true' name='[NBISi]' role='measure' type='quantitative' />
             <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
-            <column-instance column='[Departamento]' derivation='None' name='[none:Departamento:nk]' pivot='key' type='nominal' />
             <column-instance column='[proyec_d_2]' derivation='None' name='[none:proyec_d_2:ok]' pivot='key' type='ordinal' />
             <column aggregation='Sum' caption='Proyec D 2' datatype='integer' name='[proyec_d_2]' role='dimension' type='ordinal' />
             <column-instance column='[NBISi]' derivation='Sum' name='[sum:NBISi:qk]' pivot='key' type='quantitative' />
@@ -1817,126 +1779,51 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.0060aq50yk5hai1gxw1v816tm58p].[Longitude (generated)]' field-type='quantitative' max='-6618221.4776021969' min='-7679302.9955424014' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.0060aq50yk5hai1gxw1v816tm58p].[Latitude (generated)]' field-type='quantitative' max='-2477606.0696823662' min='-3068710.8641817016' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0060aq50yk5hai1gxw1v816tm58p].[Longitude (generated)]' field-type='quantitative' max='-5334220.3141933456' min='-9458618.3195150197' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0060aq50yk5hai1gxw1v816tm58p].[Latitude (generated)]' field-type='quantitative' max='-2457124.0630586203' min='-7402228.60038359' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:NBISi:qk]' num-steps='5' palette='orange_10_0' type='interpolated' />
           </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:NBISi:qk]' value='NBI %'>
+              <formatted-text>
+                <run>NBI %</run>
+              </formatted-text>
+            </format>
+          </style-rule>
           <style-rule element='map-layer'>
-            <format attr='enabled' id='hillshade_highlight_bright' value='true' />
-            <format attr='enabled' id='hillshade_highlight_med' value='true' />
-            <format attr='enabled' id='hillshade_shadow_faint' value='true' />
-            <format attr='enabled' id='hillshade_shadow_med' value='true' />
-            <format attr='enabled' id='hillshade_shadow_dark' value='true' />
-            <format attr='enabled' id='hillshade_shadow_extreme' value='true' />
             <format attr='enabled' id='light-admin-0-boundaries-bg' value='true' />
             <format attr='enabled' id='light-admin-0-boundaries' value='true' />
             <format attr='enabled' id='light-admin-0-boundaries-dispute' value='true' />
-            <format attr='enabled' id='admin-2-boundaries-bg' value='true' />
-            <format attr='enabled' id='admin-2-boundaries' value='true' />
-            <format attr='enabled' id='place-village' value='true' />
-            <format attr='enabled' id='place-town' value='true' />
             <format attr='enabled' id='place-islands' value='true' />
-            <format attr='enabled' id='place-city-sm' value='true' />
-            <format attr='enabled' id='place-city-md-s' value='true' />
-            <format attr='enabled' id='place-city-md-n' value='true' />
-            <format attr='enabled' id='place-city-lg-s' value='true' />
-            <format attr='enabled' id='place-city-lg-n' value='true' />
             <format attr='enabled' id='place-capital-s' value='true' />
             <format attr='enabled' id='place-capital-n' value='true' />
             <format attr='enabled' id='tunnel-service-link-track-case' value='true' />
-            <format attr='enabled' id='tunnel-street_limited-case' value='true' />
-            <format attr='enabled' id='tunnel-street-case' value='true' />
-            <format attr='enabled' id='tunnel-secondary-tertiary-case' value='true' />
-            <format attr='enabled' id='tunnel-primary-case' value='true' />
-            <format attr='enabled' id='tunnel-trunk_link-case' value='true' />
-            <format attr='enabled' id='tunnel-motorway_link-case' value='true' />
-            <format attr='enabled' id='tunnel-trunk-case' value='true' />
-            <format attr='enabled' id='tunnel-motorway-case' value='true' />
-            <format attr='enabled' id='tunnel-trunk_link' value='true' />
-            <format attr='enabled' id='tunnel-motorway_link' value='true' />
             <format attr='enabled' id='tunnel-service-link-track' value='true' />
-            <format attr='enabled' id='tunnel-street_limited' value='true' />
-            <format attr='enabled' id='tunnel-street' value='true' />
             <format attr='enabled' id='tunnel-tertiary' value='true' />
             <format attr='enabled' id='tunnel-secondary' value='true' />
-            <format attr='enabled' id='tunnel-primary' value='true' />
-            <format attr='enabled' id='tunnel-trunk' value='true' />
-            <format attr='enabled' id='tunnel-motorway' value='true' />
-            <format attr='enabled' id='road-street-low' value='true' />
-            <format attr='enabled' id='road-street_limited-low' value='true' />
-            <format attr='enabled' id='road-pedestrian-case' value='true' />
             <format attr='enabled' id='road-service-link-track-case' value='true' />
-            <format attr='enabled' id='road-street_limited-case' value='true' />
-            <format attr='enabled' id='road-street-case' value='true' />
             <format attr='enabled' id='road-tertiary-case' value='true' />
             <format attr='enabled' id='road-secondary-case' value='true' />
-            <format attr='enabled' id='road-primary-case' value='true' />
-            <format attr='enabled' id='road-motorway_link-case' value='true' />
-            <format attr='enabled' id='road-trunk_link-case' value='true' />
-            <format attr='enabled' id='road-trunk-case' value='true' />
-            <format attr='enabled' id='road-motorway-case' value='true' />
-            <format attr='enabled' id='road-trunk_link' value='true' />
-            <format attr='enabled' id='road-motorway_link' value='true' />
             <format attr='enabled' id='road-path' value='true' />
-            <format attr='enabled' id='road-pedestrian' value='true' />
-            <format attr='enabled' id='road-polygon' value='true' />
             <format attr='enabled' id='road-service-link-track' value='true' />
-            <format attr='enabled' id='road-street_limited' value='true' />
-            <format attr='enabled' id='road-street' value='true' />
             <format attr='enabled' id='road-tertiary' value='true' />
             <format attr='enabled' id='road-secondary' value='true' />
-            <format attr='enabled' id='road-primary' value='true' />
-            <format attr='enabled' id='road-trunk' value='true' />
-            <format attr='enabled' id='road-motorway' value='true' />
-            <format attr='enabled' id='road-rail' value='true' />
-            <format attr='enabled' id='road-rail-tracks' value='true' />
-            <format attr='enabled' id='bridge-street-low' value='true' />
-            <format attr='enabled' id='bridge-street_limited-low' value='true' />
-            <format attr='enabled' id='bridge-pedestrian-case' value='true' />
             <format attr='enabled' id='bridge-service-link-track-case' value='true' />
-            <format attr='enabled' id='bridge-street_limited-case' value='true' />
-            <format attr='enabled' id='bridge-street-case' value='true' />
             <format attr='enabled' id='bridge-tertiary-case' value='true' />
             <format attr='enabled' id='bridge-secondary-case' value='true' />
-            <format attr='enabled' id='bridge-primary-case' value='true' />
-            <format attr='enabled' id='bridge-trunk_link-case' value='true' />
-            <format attr='enabled' id='bridge-motorway_link-case' value='true' />
-            <format attr='enabled' id='bridge-trunk-case' value='true' />
-            <format attr='enabled' id='bridge-motorway-case' value='true' />
-            <format attr='enabled' id='bridge-trunk_link' value='true' />
-            <format attr='enabled' id='bridge-motorway_link' value='true' />
-            <format attr='enabled' id='bridge-path' value='true' />
-            <format attr='enabled' id='bridge-pedestrian' value='true' />
             <format attr='enabled' id='bridge-service-link-track' value='true' />
-            <format attr='enabled' id='bridge-street_limited' value='true' />
-            <format attr='enabled' id='bridge-street' value='true' />
             <format attr='enabled' id='bridge-tertiary' value='true' />
             <format attr='enabled' id='bridge-secondary' value='true' />
-            <format attr='enabled' id='bridge-primary' value='true' />
-            <format attr='enabled' id='bridge-trunk' value='true' />
-            <format attr='enabled' id='bridge-motorway' value='true' />
-            <format attr='enabled' id='bridge-rail' value='true' />
-            <format attr='enabled' id='bridge-rail-tracks' value='true' />
-            <format attr='enabled' id='bridge-trunk_link-2-case' value='true' />
-            <format attr='enabled' id='bridge-motorway_link-2-case' value='true' />
-            <format attr='enabled' id='bridge-trunk-2-case' value='true' />
-            <format attr='enabled' id='bridge-motorway-2-case' value='true' />
-            <format attr='enabled' id='bridge-trunk_link-2' value='true' />
-            <format attr='enabled' id='bridge-motorway_link-2' value='true' />
-            <format attr='enabled' id='bridge-trunk-2' value='true' />
-            <format attr='enabled' id='bridge-motorway-2' value='true' />
             <format attr='enabled' id='road-shields-2-white' value='true' />
             <format attr='enabled' id='road-shields-2-black' value='true' />
             <format attr='enabled' id='road-shields-1-white' value='true' />
             <format attr='enabled' id='road-shields-1-black' value='true' />
-            <format attr='enabled' id='road-label-small' value='true' />
             <format attr='enabled' id='road-label-big' value='true' />
             <format attr='enabled' id='Coastline' value='true' />
             <format attr='enabled' id='Area Code Boundaries' value='true' />
             <format attr='enabled' id='US Metro Boundaries CBSA' value='true' />
-            <format attr='enabled' id='place-islands-2' value='true' />
             <format attr='enabled' id='b01002_001e' value='false' />
             <format attr='enabled' id='b01002_002e' value='false' />
             <format attr='enabled' id='b01002_003e' value='false' />
@@ -1961,10 +1848,181 @@
             <format attr='enabled' id='dp05_0053e' value='false' />
             <format attr='enabled' id='dp05_0066e' value='false' />
             <format attr='enabled' id='dp05_0077e' value='false' />
+            <format attr='enabled' id='housenum-label' value='false' />
+            <format attr='enabled' id='building-line' value='false' />
+            <format attr='enabled' id='building' value='false' />
+            <format attr='enabled' id='rail-label' value='false' />
+            <format attr='enabled' id='place-residential' value='false' />
+            <format attr='enabled' id='place-neighbourhood' value='false' />
+            <format attr='enabled' id='place-suburb' value='false' />
+            <format attr='enabled' id='poi-relevant-scalerank4-l15' value='false' />
+            <format attr='enabled' id='poi-relevant-scalerank4-l1' value='false' />
+            <format attr='enabled' id='poi-parks_scalerank4' value='false' />
+            <format attr='enabled' id='poi-scalerank3' value='false' />
+            <format attr='enabled' id='poi-parks-scalerank3' value='false' />
+            <format attr='enabled' id='poi-outdoor-features' value='false' />
+            <format attr='enabled' id='poi-outdoor-features-2' value='false' />
+            <format attr='enabled' id='mountain-peak-label' value='false' />
+            <format attr='enabled' id='mountain-peak-label-with-elevation' value='false' />
+            <format attr='enabled' id='poi-scalerank2' value='false' />
+            <format attr='enabled' id='poi-parks-scalerank2' value='false' />
+            <format attr='enabled' id='poi-parks-scalerank1' value='false' />
+            <format attr='enabled' id='poi-scalerank1' value='false' />
+            <format attr='enabled' id='airport-label' value='false' />
+            <format attr='enabled' id='tunnel-street-low' value='false' />
+            <format attr='enabled' id='tunnel-street_limited-low' value='false' />
+            <format attr='enabled' id='tunnel-track-case' value='false' />
+            <format attr='enabled' id='tunnel-service-link-case' value='false' />
+            <format attr='enabled' id='tunnel-street_limited-case' value='false' />
+            <format attr='enabled' id='tunnel-street-case' value='false' />
+            <format attr='enabled' id='tunnel-secondary-tertiary-case' value='false' />
+            <format attr='enabled' id='tunnel-primary-case' value='false' />
+            <format attr='enabled' id='tunnel-trunk_link-case' value='false' />
+            <format attr='enabled' id='tunnel-motorway_link-case' value='false' />
+            <format attr='enabled' id='tunnel-trunk-case' value='false' />
+            <format attr='enabled' id='tunnel-motorway-case' value='false' />
+            <format attr='enabled' id='tunnel-construction' value='false' />
+            <format attr='enabled' id='tunnel-path' value='false' />
+            <format attr='enabled' id='tunnel-cycleway-piste' value='false' />
+            <format attr='enabled' id='tunnel-steps' value='false' />
+            <format attr='enabled' id='tunnel-trunk_link' value='false' />
+            <format attr='enabled' id='tunnel-motorway_link' value='false' />
+            <format attr='enabled' id='tunnel-pedestrian' value='false' />
+            <format attr='enabled' id='tunnel-track' value='false' />
+            <format attr='enabled' id='tunnel-service-link' value='false' />
+            <format attr='enabled' id='tunnel-street_limited' value='false' />
+            <format attr='enabled' id='tunnel-street' value='false' />
+            <format attr='enabled' id='tunnel-secondary-tertiary' value='false' />
+            <format attr='enabled' id='tunnel-primary' value='false' />
+            <format attr='enabled' id='tunnel-oneway-arrows-blue-minor' value='false' />
+            <format attr='enabled' id='tunnel-oneway-arrows-blue-major' value='false' />
+            <format attr='enabled' id='tunnel-trunk' value='false' />
+            <format attr='enabled' id='tunnel-motorway' value='false' />
+            <format attr='enabled' id='tunnel-oneway-arrows-white' value='false' />
+            <format attr='enabled' id='ferry' value='false' />
+            <format attr='enabled' id='ferry-auto' value='false' />
+            <format attr='enabled' id='road-path-bg' value='false' />
+            <format attr='enabled' id='road-piste-bg' value='false' />
+            <format attr='enabled' id='road-sidewalk-corridor-bg' value='false' />
+            <format attr='enabled' id='road-steps-bg' value='false' />
+            <format attr='enabled' id='road-pedestrian-case' value='false' />
+            <format attr='enabled' id='road-street-low' value='false' />
+            <format attr='enabled' id='road-street_limited-low' value='false' />
+            <format attr='enabled' id='road-track-case' value='false' />
+            <format attr='enabled' id='road-service-link-case' value='false' />
+            <format attr='enabled' id='road-street_limited-case' value='false' />
+            <format attr='enabled' id='road-street-case' value='false' />
+            <format attr='enabled' id='road-secondary-tertiary-case' value='false' />
+            <format attr='enabled' id='road-primary-case' value='false' />
+            <format attr='enabled' id='road-motorway_link-case' value='false' />
+            <format attr='enabled' id='road-trunk_link-case' value='false' />
+            <format attr='enabled' id='road-trunk-case' value='false' />
+            <format attr='enabled' id='road-motorway-case' value='false' />
+            <format attr='enabled' id='road-construction' value='false' />
+            <format attr='enabled' id='road-sidewalk-corridor' value='false' />
+            <format attr='enabled' id='road-path-smooth' value='false' />
+            <format attr='enabled' id='road-path-rough' value='false' />
+            <format attr='enabled' id='road-cycleway-piste' value='false' />
+            <format attr='enabled' id='road-steps' value='false' />
+            <format attr='enabled' id='road-trunk_link' value='false' />
+            <format attr='enabled' id='road-motorway_link' value='false' />
+            <format attr='enabled' id='road-pedestrian' value='false' />
+            <format attr='enabled' id='road-pedestrian-polygon-fill' value='false' />
+            <format attr='enabled' id='road-pedestrian-polygon-pattern' value='false' />
+            <format attr='enabled' id='road-polygon' value='false' />
+            <format attr='enabled' id='road-track' value='false' />
+            <format attr='enabled' id='road-service-link' value='false' />
+            <format attr='enabled' id='road-street_limited' value='false' />
+            <format attr='enabled' id='road-street' value='false' />
+            <format attr='enabled' id='road-secondary-tertiary' value='false' />
+            <format attr='enabled' id='road-primary' value='false' />
+            <format attr='enabled' id='road-oneway-arrows-blue-minor' value='false' />
+            <format attr='enabled' id='road-oneway-arrows-blue-major' value='false' />
+            <format attr='enabled' id='road-trunk' value='false' />
+            <format attr='enabled' id='road-motorway' value='false' />
+            <format attr='enabled' id='road-rail' value='false' />
+            <format attr='enabled' id='road-rail-tracks' value='false' />
+            <format attr='enabled' id='level-crossing' value='false' />
+            <format attr='enabled' id='road-oneway-arrows-white' value='false' />
+            <format attr='enabled' id='bridge-path-bg' value='false' />
+            <format attr='enabled' id='bridge-piste-bg' value='false' />
+            <format attr='enabled' id='bridge-steps-bg' value='false' />
+            <format attr='enabled' id='bridge-pedestrian-case' value='false' />
+            <format attr='enabled' id='bridge-street-low' value='false' />
+            <format attr='enabled' id='bridge-street_limited-low' value='false' />
+            <format attr='enabled' id='bridge-track-case' value='false' />
+            <format attr='enabled' id='bridge-service-link-case' value='false' />
+            <format attr='enabled' id='bridge-street_limited-case' value='false' />
+            <format attr='enabled' id='bridge-street-case' value='false' />
+            <format attr='enabled' id='bridge-secondary-tertiary-case' value='false' />
+            <format attr='enabled' id='bridge-primary-case' value='false' />
+            <format attr='enabled' id='bridge-trunk_link-case' value='false' />
+            <format attr='enabled' id='bridge-motorway_link-case' value='false' />
+            <format attr='enabled' id='bridge-trunk-case' value='false' />
+            <format attr='enabled' id='bridge-motorway-case' value='false' />
+            <format attr='enabled' id='bridge-construction' value='false' />
+            <format attr='enabled' id='bridge-path' value='false' />
+            <format attr='enabled' id='bridge-cycleway-piste' value='false' />
+            <format attr='enabled' id='bridge-steps' value='false' />
+            <format attr='enabled' id='bridge-trunk_link' value='false' />
+            <format attr='enabled' id='bridge-motorway_link' value='false' />
+            <format attr='enabled' id='bridge-pedestrian' value='false' />
+            <format attr='enabled' id='bridge-track' value='false' />
+            <format attr='enabled' id='bridge-service-link' value='false' />
+            <format attr='enabled' id='bridge-street_limited' value='false' />
+            <format attr='enabled' id='bridge-street' value='false' />
+            <format attr='enabled' id='bridge-secondary-tertiary' value='false' />
+            <format attr='enabled' id='bridge-primary' value='false' />
+            <format attr='enabled' id='bridge-oneway-arrows-blue-minor' value='false' />
+            <format attr='enabled' id='bridge-oneway-arrows-blue-major' value='false' />
+            <format attr='enabled' id='bridge-trunk' value='false' />
+            <format attr='enabled' id='bridge-motorway' value='false' />
+            <format attr='enabled' id='bridge-rail' value='false' />
+            <format attr='enabled' id='bridge-rail-tracks' value='false' />
+            <format attr='enabled' id='bridge-trunk_link-2-case' value='false' />
+            <format attr='enabled' id='bridge-motorway_link-2-case' value='false' />
+            <format attr='enabled' id='bridge-trunk-2-case' value='false' />
+            <format attr='enabled' id='bridge-motorway-2-case' value='false' />
+            <format attr='enabled' id='bridge-trunk_link-2' value='false' />
+            <format attr='enabled' id='bridge-motorway_link-2' value='false' />
+            <format attr='enabled' id='bridge-trunk-2' value='false' />
+            <format attr='enabled' id='bridge-motorway-2' value='false' />
+            <format attr='enabled' id='bridge-oneway-arrows-white' value='false' />
+            <format attr='enabled' id='road-label-small' value='false' />
+            <format attr='enabled' id='road-label-medium' value='false' />
+            <format attr='enabled' id='road-label-large' value='false' />
+            <format attr='enabled' id='road-shields-black' value='false' />
+            <format attr='enabled' id='road-shields-white' value='false' />
+            <format attr='enabled' id='motorway-junction' value='false' />
+            <format attr='enabled' id='state-label-sm' value='false' />
+            <format attr='enabled' id='state-label-md' value='false' />
+            <format attr='enabled' id='state-label-lg' value='false' />
+            <format attr='enabled' id='water-label-sm' value='false' />
+            <format attr='enabled' id='water-label' value='false' />
+            <format attr='enabled' id='waterway-label' value='false' />
+            <format attr='enabled' id='marine-label-sm-ln' value='false' />
+            <format attr='enabled' id='marine-label-sm-pt' value='false' />
+            <format attr='enabled' id='marine-label-md-ln' value='false' />
+            <format attr='enabled' id='marine-label-md-pt' value='false' />
+            <format attr='enabled' id='marine-label-lg-ln' value='false' />
+            <format attr='enabled' id='marine-label-lg-pt' value='false' />
+            <format attr='enabled' id='place-hamlet' value='false' />
+            <format attr='enabled' id='place-village' value='false' />
+            <format attr='enabled' id='place-town' value='false' />
+            <format attr='enabled' id='place-city-sm' value='false' />
+            <format attr='enabled' id='place-islet-archipelago-aboriginal' value='false' />
+            <format attr='enabled' id='place-islet-archipelago-aboriginal-2' value='false' />
+            <format attr='enabled' id='place-city-md-s' value='false' />
+            <format attr='enabled' id='place-city-md-n' value='false' />
+            <format attr='enabled' id='place-city-lg-s' value='false' />
+            <format attr='enabled' id='place-city-lg-n' value='false' />
+            <format attr='enabled' id='place-island' value='false' />
+            <format attr='enabled' id='place-island-2' value='false' />
           </style-rule>
           <style-rule element='map'>
-            <format attr='washout' value='0' />
-            <format attr='map-style' value='normal' />
+            <format attr='washout' value='0.55000001192092896' />
+            <format attr='map-style' value='outdoors' />
+            <format attr='wrap' value='true' />
           </style-rule>
           <style-rule element='map-data-layer'>
             <format attr='palette' value='tableau-map-blue-green-light' />
@@ -1979,7 +2037,6 @@
             <mark class='Automatic' />
             <encodings>
               <color column='[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:NBISi:qk]' />
-              <text column='[federated.0060aq50yk5hai1gxw1v816tm58p].[none:Departamento:nk]' />
               <lod column='[federated.0060aq50yk5hai1gxw1v816tm58p].[clct:Geometry:nk]' />
               <lod column='[federated.0060aq50yk5hai1gxw1v816tm58p].[none:proyec_d_2:ok]' />
               <geometry column='[federated.0060aq50yk5hai1gxw1v816tm58p].[clct:Geometry:nk]' />
@@ -1990,9 +2047,16 @@
                 <format attr='font-size' value='8' />
               </style-rule>
               <style-rule element='mark'>
-                <format attr='mark-labels-show' value='true' />
                 <format attr='mark-transparency' value='185' />
                 <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='611' />
+                <format attr='maxwidth' value='611' />
+                <format attr='minheight' value='711' />
+                <format attr='maxheight' value='711' />
+                <format attr='aspect' value='0' />
               </style-rule>
             </style>
           </pane>
@@ -2141,12 +2205,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='175'>
+          <strip size='300'>
             <card pane-specification-id='0' param='[federated.0060aq50yk5hai1gxw1v816tm58p].[sum:NBISi:qk]' type='color' />
           </strip>
         </edge>
